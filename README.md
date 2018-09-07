@@ -39,7 +39,7 @@ It has and OpenStreetMap base layer and 3 overlay layers:
   * When user clicks outside of the points, the styling is reset
 
 * Stops Heatmap
-  * Just a density map made with [Leaflet.heat plugin](https://github.com/Leaflet/Leaflet.heat)
+  * Just a density map made with [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) plugin
 
 * Routes
   * By default all lines are gray
