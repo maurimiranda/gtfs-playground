@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>GTFS Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="vendor/leaflet.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/leaflet-heat.js"></script>
+  <script src='vendor/turf.min.js'></script>
+</head>
+<body>
+  <div id="map" class="map" />
+  <div class="leaflet-bottom leaflet-left">
+    <ul id="stopList" class="leaflet-control custom-control stop-list"></ul>
+    <ul id="distanceLegend" class="leaflet-control custom-control distance-legend">
+      <li><span style="background-color: #FF0000;"></span> Selected Stop</li>
+      <li><span style="background-color: #FF8000;"></span> &lt;= 3 km</li>
+      <li><span style="background-color: #FFFF00;"></span> &lt;= 10 km</li>
+      <li><span style="background-color: #00FF00;"></span> &lt;= 15 km</li>
+      <li><span style="background-color: #00FFAA;"></span> &lt;= 50 km</li>
+      <li><span style="background-color: #00FFFF;"></span> &gt; 50 km</li>
+    </ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
