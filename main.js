@@ -169,6 +169,9 @@ Promise.all([
   map.on('click', resetStops);
 
   // Reset stops layer when routes layer is added or removed
-  routesLayer.on('add', resetStops);
+  routesLayer.on('add', () => {
+    if (!map.hasLayer(stopsLayer)) map.addLayer(stopsLayer);
+    resetStops();
+  });
   routesLayer.on('remove', resetStops);
 });
