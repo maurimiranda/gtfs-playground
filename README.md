@@ -47,3 +47,9 @@ It has and OpenStreetMap base layer and 3 overlay layers:
     * The line style changes
     * The app finds all stops that intersects the route and marks them
   * On mouse click, a list of stops with id and name is shown in the left-bottom side of the screen
+  
+## Play with it!
+
+A live version is published via GitHub pages: https://maurimiranda.github.io/gtfs-playground/
+
+Of course, you can also clone the repo or download the files and use it locally.
