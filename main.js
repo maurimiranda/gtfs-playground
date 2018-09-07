@@ -16,7 +16,7 @@ const layersControl = L.control.layers({
   collapsed: false,
 }).addTo(map);
 
-// Find containers
+// Define container elements
 const stopList = document.getElementById('stopList');
 const distanceLegend = document.getElementById('distanceLegend');
 
@@ -34,6 +34,7 @@ const resetStops = () => {
   map.scrollWheelZoom.enable();
 };
 
+// Get GeoJSON files
 Promise.all([
   fetch('./data/stops.geojson').then(response => response.json()),
   fetch('./data/routes.geojson').then(response => response.json()),
@@ -143,6 +144,7 @@ Promise.all([
           });
         });
 
+        // Show legend
         distanceLegend.style.display = 'block';
 
         // Move selected feature to top
