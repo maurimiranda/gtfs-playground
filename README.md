@@ -16,7 +16,10 @@ Stop Times were joined with stops to build route linestrings and converted to Ge
 
 The following SQL was used to build the linestrings:
 ```sql
-SELECT DISTINCT st_makeline(s.geom) FROM stop_times st JOIN stops s ON s.stop_id = st.stop_id GROUP BY st.trip_id;
+SELECT DISTINCT st_makeline(s.geom) 
+FROM stop_times st 
+JOIN stops s ON s.stop_id = st.stop_id 
+GROUP BY st.trip_id;
 ```
 
 GeoJSON files are located in `/data` directory.
