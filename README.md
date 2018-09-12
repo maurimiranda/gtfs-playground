@@ -25,7 +25,7 @@ GeoJSON files are located in `/data` directory.
 
 It was built using [Leaflet](https://leafletjs.com/), [Turf](http://turfjs.org/) and vanilla JavaScript (ES6)
 
-It has and OpenStreetMap base layer and 3 overlay layers:
+It has an OpenStreetMap base layer and 3 overlay layers:
 
 * Stops
 
